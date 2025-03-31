@@ -1,0 +1,24 @@
+{
+  "name": "devtree",
+  "module": "index.js",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1"
+  }
+}
