@@ -2,6 +2,13 @@ import mongoose, { Schema } from "mongoose";
 import { IUser } from "./Interfaces";
 
 const userSchema =  new Schema({
+    handle: {
+        type: String,
+        required: true,
+        trim: true,
+        lowercase: true,
+        unique: true,
+    },
     name: {
         type: String,
         required: true,
