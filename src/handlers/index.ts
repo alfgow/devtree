@@ -43,3 +43,8 @@ export const createAccount = async (req : Request, res : Response)=> {
         message: 'User created successfully'
     })
 }
+
+export const login = async (req:Request, res:Response) => {
+    console.log('Login');
+    
+}
